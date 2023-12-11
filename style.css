@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    box-shadow: 0px 0px 10px 2px #433c3c;
+}
+
+@media (max-width: 480px) {
+    .menu-fixed {
+        height: 50px;
+    }
+    .menu {
+        padding: 20px;
+    }
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}
+
+h1 {
+    text-align: center;
+}
+.efeitos-h1 {
+    background-image: linear-gradient(to left, #3d3838, white);
+    color: white;
+    border-radius: 5px;
+}
+
+/*Cabeçalho*/
+
+.menu-fixed {
+    position: fixed;
+    height: 60px;
+    background: hsl(217, 28%, 15%);
+    width: 100%;
+}
+
+.menu {
+    padding: 20px;
+    width: 960px;
+    margin: auto;
+}
+.menu ul {
+    display: flex;
+    justify-content: flex-end;
+}
+.menu li {
+    padding: 0px 10px 0px 10px;
+}
+
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+
+.button a {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+}
+
+.button:hover {
+    transition: 0.3s;
+    border-bottom: #423f8c 4px solid;
+}
+
+/*Imagem e nome h1 
+
+
+.imgSteven{
+  text-align: center;
+}
+.imgSteven img{
+  max-width: 700px;
+  max-height: 650px;
+  border-radius: 15px;
+  margin: 15px auto auto auto;
+}
+*/
+
+main {
+    padding: 20px;
+}
+
+/*home*/
+
+.home {
+    height: 450px;
+    display: flex;
+    margin-top: 135px;
+    background-image: linear-gradient(to left, #3d3838, white);
+    border-radius: 5px;
+}
+
+.home:target {
+    scroll-margin-top: 200px;
+}
+
+.home,
+h1 {
+    font-size: xx-large;
+    text-transform: uppercase;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.h1-nome {
+    border-bottom: rgb(66, 63, 140) solid 5px;
+    color: white;
+}
+.home button {
+    justify-content: center;
+}
+
+/*Bibliografia*/
+
+.bibliografia {
+    margin-top: 150px;
+    height: 500px;
+}
+.bibliografia h1 {
+    margin: 85px 0px 85px 0px;
+}
+.bibliografia:target {
+    scroll-margin-top: 150px;
+}
+
+.imgb {
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+}
+
+figcaption {
+    font-size: 13px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.container-bibliografia {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.container-bibliografia p {
+    text-indent: 15px;
+    width: 450px;
+}
+
+/*Especializações*/
+
+.especializacao {
+    height: 500px;
+}
+.especializacao h1 {
+    margin: 85px 0px 85px 0px;
+}
+.especializacao:target {
+    scroll-margin-top: 150px;
+}
+.content-especializacao {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
+    gap: 10px;
+}
+.content-especializacao-item {
+    text-align: center;
+    padding: 10px;
+    border: #3d3838 solid 4px;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+.content-especializacao-item img {
+    width: 75px;
+    height: 75px;
+    margin: auto;
+}
+.content-especializacao-item:hover {
+    background: #786d6dbe;
+    color: white;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+/*contato*/
+
+.contato:target {
+    scroll-margin-top: 70px;
+}
+
+.contato h1 {
+    margin: 85px 0px 85px 0px;
+}
+
+form {
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    box-shadow: 0px 0px 5px 0.1px black;
+    border-radius: 10px;
+    margin: auto;
+    padding: 10px;
+}
+
+input,
+textarea {
+    border-radius: 3px;
+    margin: 10px 0px 10px 0px;
+}
+textarea {
+    width: 508px;
+}
+input {
+    width: 508px;
+    height: 30px;
+}
+.btn-enviar {
+    background: white;
+    font-size: larger;
+    font-weight: bold;
+    color: #423f8c;
+    width: 250px;
+    height: 40px;
+    border: black solid 1px;
+}
+.btn-enviar:hover {
+    background: #f3f3f7;
+}
+.endereco {
+    text-align: center;
+}
+
+/*Rodapé*/
+.footer {
+    width: 100%;
+    background-color: #3d3838;
+    height: 85px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
